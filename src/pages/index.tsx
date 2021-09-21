@@ -1,11 +1,25 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import { Header } from "src/components/Header";
+import type { NextPage } from 'next';
+import { useRef, useState } from 'react';
+import { Modal } from 'src/components/modal';
+import { Header } from 'src/components/Header';
 
 const Home: NextPage = () => {
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const openModal = () => {
+    setIsOpen(true);
+  };
+  const afterOpenModal = () => {};
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+  // const canvasRef = useRef(100);
+  // console.log(canvasRef.current);
   return (
     <>
+      <div className="flex justify-center items-center h-screen">
+        <Modal />
+      </div>
+      {/* <canvas className="fixed w-full h-full pointer-events-none opacity-30"></canvas> */}
       <Header />
       {/* <Head>
         <title>Create Next App</title>
