@@ -2,13 +2,6 @@ import { useCallback, useState } from 'react';
 
 export const Modal = () => {
   const [isShow, setIsShow] = useState(false);
-  // const openModal = () => {
-  //   setModalIsOpen(true);
-  // };
-  // const afterOpenModal = () => {};
-  // const closeModal = () => {
-  //   setModalIsOpen(false);
-  // };
   const handleDisplay = useCallback(() => {
     setIsShow((prevIsShow) => !prevIsShow);
   }, []);

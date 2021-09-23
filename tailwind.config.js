@@ -9,6 +9,13 @@ module.exports = {
         // display: ['Noto Sans JP'],
         // body: ['Noto Sans JP'],
       },
+      maxWidth: {
+       '1000': '1000px',
+      },
+      backgroundImage: theme => ({
+        'hero-pattern': "url('/img/hero-pattern.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }),
     },
   },
   variants: {
