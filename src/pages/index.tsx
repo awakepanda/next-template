@@ -6,6 +6,7 @@ import { Tabmenu } from 'src/components/Tabmenu';
 const Home: NextPage = () => {
   return (
     <>
+      {/* <p className="test">test</p> */}
       {/* <div className="flex justify-center items-center h-screen">
         <Modal />
       </div> */}
